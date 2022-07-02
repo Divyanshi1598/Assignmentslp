@@ -116,36 +116,37 @@ function App() {
   return (
     <div className="App">
       <form className="create" onSubmit={handleSubmit}>
-        <h3>Add a New Employe</h3>
-
+        <h4>Add a New Employe</h4>
+<div className="input-box">
         <labe className="lableinput">Name:</labe>
-        <input
+        <input className="inputbox"  placeholder="name..."
           type="text"
           onChange={(e) => setName(e.target.value)}
           value={name}
         /><br></br><br></br>
 
-        <label>Designation:</label>
-        <input
+        <label className="lableinput">Design:</label>
+        <input className="inputbox"  placeholder="designation.."
           type="text"
           onChange={(e) => setDesignation(e.target.value)}
           value={designation}
         /><br></br><br></br>
 
-        <label>Age:</label>
-        <input className="inputbox"
+        <label className="lableinput">Age:</label>
+        <input className="inputbox"  placeholder="age..."
           type="number"
           onChange={(e) => setAge(e.target.value)}
           value={age}
         /><br></br><br></br>
-        <label>Salary:</label>
-        <input
+        <label className="lableinput">Salary:</label>
+        <input className="inputbox"  placeholder="salary..."
           type="number"
           onChange={(e) => setSalary(e.target.value)}
           value={salary}
         /><br></br><br></br>
 
-        <Button type="submit">Add employe</Button>
+        <Button  type="submit">Add employe</Button>
+        </div>
       </form>
 
       <div className="tab">
@@ -203,34 +204,36 @@ function App() {
           </Modal.Header>
           <Modal.Body>
             <form className="create" onSubmit={handleUpdate}>
-              <label>Name:</label>
-              <input
+            <div >
+              <label className="lableinput">Name:</label>
+              <input className="inputbox"  placeholder="name..."
                 type="text"
                 onChange={(e) => setEditName(e.target.value)}
                 value={editName}
               /><br></br><br></br>
 
-              <label>Designation:</label>
-              <input
+              <label className="lableinput">Design.:</label>
+              <input className="inputbox"  placeholder="designation..."
                 type="text"
                 onChange={(e) => setEditDesignation(e.target.value)}
                 value={editDesignation}
               /><br></br><br></br>
 
-              <label>Age:</label>
-              <input
+              <label className="lableinput">Age:</label>
+              <input className="inputbox"  placeholder="age..."
                 type="number"
                 onChange={(e) => setEditAge(e.target.value)}
                 value={editAge}
               /><br></br><br></br>
-              <label>Salary:</label>
-              <input
+              <label className="lableinput">Salary:</label>
+              <input className="inputbox" placeholder="salary..."
                 type="number"
                 onChange={(e) => setEditSalary(e.target.value)}
                 value={editSalary}
               /><br></br><br></br>
 
               <Button type="submit">Edit employe</Button>
+              </div>
             </form>
           </Modal.Body>
         </Modal>
