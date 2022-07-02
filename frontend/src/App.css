@@ -1,6 +1,10 @@
-*{background-color: whitesmoke;}
+* {
+  background-color: whitesmoke;
+}
+
 .App {
   text-align: center;
+
 
 }
 
@@ -34,27 +38,60 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.button{
+.button {
   margin-top: 50px;
-  padding: 9px ;
+  padding: 9px;
+  background-color: red;
 }
-.tab{
+
+.tab {
   margin-top: 50px;
-/* width: 200px; */
+  /* width: 200px; */
   height: 100px;
   padding-left: 50px;
-    padding-right: 50px;
+  padding-right: 50px;
 
 }
-.lableinput{
-  font-size: 30px;
+
+.create {
+  height: 400px;
+
+  background-color: gray;
+}
+
+h3 {
+  margin-top: 80px;
+  color: "red";
+}
+
+.lableinput {
+  font-size: 20px;
+
 
 }
-.inputbox{
-  padding-right: 100px;
+
+.inputbox {
+
+  padding-right: 40px;
+  height: 25px;
+  margin-left: 60px;
+  border-radius: 4px;
+  cursor: center;
+
+}
+
+.input-box {
+  border-radius: 10px;
+  margin-top: 30px;
+  height: 300px;
+  width: 500px;
+  padding-right: 60px;
+  margin-left: 490px;
+
 }
